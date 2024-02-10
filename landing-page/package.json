@@ -17,7 +17,7 @@
     "build:css": "npm-run-all compile:sass prefix:css compress:css",
     "clean:dist": "if exist dist rmdir dist /Q/S && mkdir dist && mkdir dist\\assets\\",
     "copy:assets": "xcopy src\\assets\\ dist\\assets\\ /E/H",
-    "create:dist": "mkdir dist && mkdir dist\\assets\\ && cp -rf src\\assets\\* dist\\assets\\",
+    "create:dist": "mkdir -p dist/assets/ && cp -rf src/assets/* dist/assets",
     "init:parcel": "npm-run-all clean:dist copy:assets",
     "start:parcel": "parcel src/index.html",
     "build:parcel": "parcel build src/index.html --dist-dir ./dist",
