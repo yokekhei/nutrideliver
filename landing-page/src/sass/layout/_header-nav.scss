@@ -91,7 +91,7 @@
       height: 4.8rem;
       stroke: var(--color-grey-01);
 
-      &[name='close-outline'] {
+      &--close-outline {
         display: none;
       }
     }
@@ -108,15 +108,17 @@
     }
   }
 
-  .header-nav__mobile-icon[name='close-outline'] {
-    @include respond(tab-port) {
-      display: block;
+  .header-nav__mobile-icon {
+    &--close-outline {
+      @include respond(tab-port) {
+        display: block;
+      }
     }
-  }
 
-  .header-nav__mobile-icon[name='menu-outline'] {
-    @include respond(tab-port) {
-      display: none;
+    &--menu-outline {
+      @include respond(tab-port) {
+        display: none;
+      }
     }
   }
 }

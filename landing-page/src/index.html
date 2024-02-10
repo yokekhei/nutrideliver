@@ -47,10 +47,14 @@
         </ul>
       </nav>
       <button class="header-nav__mobile-btn">
-        <svg class="header-nav__mobile-icon" name="menu-outline">
+        <svg
+          class="header-nav__mobile-icon header-nav__mobile-icon--menu-outline"
+        >
           <use xlink:href="img/sprite.svg#menu-outline"></use>
         </svg>
-        <svg class="header-nav__mobile-icon" name="close-outline">
+        <svg
+          class="header-nav__mobile-icon header-nav__mobile-icon--close-outline"
+        >
           <use xlink:href="img/sprite.svg#close-outline"></use>
         </svg>
       </button>
@@ -321,7 +325,9 @@
           </div>
         </div>
         <div class="container all-recipes">
-          <a href="#" class="text-link text-link--with-padding-bottom">See all recipes &rarr;</a>
+          <a href="#" class="text-link text-link--with-padding-bottom"
+            >See all recipes &rarr;</a
+          >
         </div>
       </section>
       <section class="section-testimonials" id="testimonials">
@@ -737,16 +743,10 @@
           Disclaimer: This Webpage Is for Demonstration and Educational Purposes
         </p>
         <button class="disclaimer__btn">
-          <svg
-            class="disclaimer__icon disclaimer__icon--down"
-            name="caret-down-outline"
-          >
+          <svg class="disclaimer__icon disclaimer__icon--down">
             <use xlink:href="img/sprite.svg#caret-down-outline"></use>
           </svg>
-          <svg
-            class="disclaimer__icon disclaimer__icon--up"
-            name="caret-up-outline"
-          >
+          <svg class="disclaimer__icon disclaimer__icon--up">
             <use xlink:href="img/sprite.svg#caret-up-outline"></use>
           </svg>
         </button>
@@ -798,18 +798,20 @@
           <p class="disclaimer__text">
             If you have any questions or concerns regarding this project, please
             feel free to contact
-            <a href="$contactUrl" class="text-link disclaimer__link">$developer</a>.
+            <a href="$contactUrl" class="text-link disclaimer__link"
+              >$developer</a
+            >.
           </p>
         </div>
       </div>
     </div>
     <div class="modal u-hidden">
-      <svg class="modal__icon--status" name="happy-outline">
+      <svg class="modal__icon--status">
         <use xlink:href="img/sprite.svg#happy-outline"></use>
       </svg>
       <h4 class="heading-tertiary modal__title">Sign up request submitted</h4>
       <button class="modal__close-btn">
-        <svg class="modal__icon--close" name="close-outline">
+        <svg class="modal__icon--close">
           <use xlink:href="img/sprite.svg#close-outline"></use>
         </svg>
       </button>

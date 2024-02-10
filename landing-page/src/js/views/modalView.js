@@ -36,14 +36,14 @@ class ModalView extends View {
 
   _generateMarkup() {
     return `
-      <svg class="modal__icon--status" name="${this._data.statusIconName}">
+      <svg class="modal__icon--status">
           <use xlink:href="${icons}#${this._data.statusIconName}"></use>
         </svg>
         <h4 class="heading-tertiary modal__title">
           ${this._data.title}
         </h4>
         <button class="modal__close-btn">
-          <svg class="modal__icon--close" name="close-outline">
+          <svg class="modal__icon--close">
             <use xlink:href="${icons}#close-outline"></use>
           </svg>
         </button>
