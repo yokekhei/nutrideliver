@@ -1,0 +1,27 @@
+.feature {
+  &__icon-frame {
+    display: inline-block;
+    padding: 1.6rem;
+    background-color: var(--color-primary-tint-08);
+    border-radius: 50%;
+    margin-bottom: 3.2rem;
+  }
+
+  &__icon {
+    width: 3.2rem;
+    height: 3.2rem;
+    stroke: var(--color-primary);
+  }
+
+  &__title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--color-grey-01);
+    margin-bottom: 1.6rem;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+  }
+}

@@ -1,0 +1,16 @@
+.social-media {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  margin-bottom: 1.6rem;
+
+  &__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: var(--color-grey-05);
+
+    &:hover {
+      fill: var(--color-grey-03);
+    }
+  }
+}

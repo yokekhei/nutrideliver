@@ -1,0 +1,16 @@
+{
+  "modals": [
+    {
+      "type": "cta_form_submit_success",
+      "status_icon_name": "happy-outline",
+      "title": "Sign up request submitted",
+      "message": "Thank you for signing up! Check your email for a confirmation message. If you don't see it, please check your spam folder. Exciting things await &mdash; stay tuned!"
+    },
+    {
+      "type": "cta_form_submit_fail",
+      "status_icon_name": "sad-outline",
+      "title": "Oops, something went wrong",
+      "message": "We are sorry, but it seems there was an issue processing your sign-up request. Please try again later. If the problem persists, contact our support team at <a href=\"mailto:support@nutrideliver.com\" class=\"text-link\">support@nutrideliver.com</a>. We appreciate your patience."
+    }
+  ]
+}

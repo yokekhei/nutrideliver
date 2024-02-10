@@ -1,0 +1,46 @@
+:root {
+  --color-primary: #9abc5e;
+  --color-primary-shade-01: #8ba955;
+  --color-primary-shade-02: #7b964b;
+  --color-primary-shade-03: #6c8442;
+  --color-primary-shade-04: #5c7138;
+  --color-primary-shade-05: #4d5e2f;
+  --color-primary-shade-06: #3e4b26;
+  --color-primary-shade-07: #2e381c;
+  --color-primary-shade-08: #1f2613;
+  --color-primary-shade-09: #0f1309;
+  --color-primary-shade-10: #000000;
+  --color-primary-tint-01: #a4c36e;
+  --color-primary-tint-02: #aec97e;
+  --color-primary-tint-03: #b8d08e;
+  --color-primary-tint-04: #c2d79e;
+  --color-primary-tint-05: #cddeaf;
+  --color-primary-tint-06: #d7e4bf;
+  --color-primary-tint-07: #e1ebcf;
+  --color-primary-tint-08: #ebf2df;
+  --color-primary-tint-09: #f5f8ef;
+  --color-primary-tint-10: #ffffff;
+  --color-grey-01: #333333;
+  --color-grey-02: #444444;
+  --color-grey-03: #555555;
+  --color-grey-04: #666666;
+  --color-grey-05: #6f6f6f;
+  --color-grey-06: #777777;
+  --color-grey-07: #888888;
+  --color-grey-08: #aaaaaa;
+  --color-grey-09: #dddddd;
+  --color-grey-10: #eeeeee;
+}
+
+$color-heading: var(--color-grey-01);
+$color-subheading: var(--color-primary-shade-04);
+$color-body-text: var(--color-grey-03);
+
+$transition-default: all 0.3s;
+
+$layer-header: 999;
+$layer-header-nav-mobile-btn: 9999;
+$layer-how-img-before: -2;
+$layer-how-img-after: -1;
+$layer-overlay: 1;
+$layer-modal: 2;

@@ -1,2 +1,2 @@
 # nutrideliver
-Nutritious meal delivery application
+NutriDeliver meal subscription application

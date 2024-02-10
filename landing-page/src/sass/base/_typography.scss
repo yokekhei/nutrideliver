@@ -1,0 +1,81 @@
+%heading {
+  color: $color-heading;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.heading {
+  &-primary {
+    @extend %heading;
+    font-size: 5.2rem;
+    line-height: 1.05;
+    margin-bottom: 3.2rem;
+
+    @include respond(small-desktop) {
+      font-size: 4.4rem;
+    }
+  }
+
+  &-secondary {
+    font-size: 4.4rem;
+    line-height: 1.2;
+    margin-bottom: 9.6rem;
+
+    @include respond(tab-land) {
+      font-size: 3.6rem;
+    }
+
+    @include respond(small-tab-port) {
+      margin-bottom: 4.8rem;
+    }
+  }
+
+  &-tertiary {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+
+    @include respond(tab-land) {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: $color-subheading;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.text-link {
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-primary);
+    border-bottom: 1px solid currentColor;
+    cursor: pointer;
+    transition: $transition-default;
+  }
+
+  &--with-padding-bottom {
+    &:link,
+    &:visited {
+      padding-bottom: 2px;
+    }
+  }
+
+  &:hover,
+  &:active {
+    color: var(--color-primary-shade-04);
+    border-bottom: 1px solid transparent;
+  }
+}
+
+.strong {
+  font-weight: 500;
+}

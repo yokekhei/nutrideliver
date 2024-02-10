@@ -1,0 +1,23 @@
+.testimonial {
+  display: flex;
+  flex-direction: column;
+
+  &__img {
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
+  }
+
+  &__name {
+    font-size: 1.6rem;
+    color: var(--color-grey-04);
+    margin-top: auto;
+  }
+}
