@@ -1,0 +1,72 @@
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background: linear-gradient(
+    110deg,
+    var(--color-primary-tint-06) 0%,
+    var(--color-primary) 100%
+  );
+  box-shadow: 0 2.4rem 4.8rem 0px rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+
+  @include respond(tab-port) {
+    /* 3/5 = 60% + 2/5 = 40% */
+    grid-template-columns: 3fr 2fr;
+  }
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
+
+  *:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(245, 245, 217, 0.5);
+  }
+
+  &__text-box {
+    padding: 4.8rem 6.4rem 6.4rem;
+    color: var(--color-primary-shade-06);
+
+    @include respond(phone) {
+      padding: 3.2rem;
+    }
+
+    .heading-secondary {
+      color: inherit;
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2.4rem;
+    column-gap: 3.2rem;
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__img-box {
+    background: linear-gradient(
+        137deg,
+        rgba(215, 228, 191, 0.5) -93.39%,
+        rgba(154, 188, 94, 0.5) 100%
+      ),
+      url('../img/cta.jpg'), lightgray 50% / cover no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include respond(phone) {
+      height: 48rem;
+      grid-row: 1;
+    }
+  }
+}

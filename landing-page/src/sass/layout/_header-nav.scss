@@ -1,0 +1,122 @@
+.header-nav {
+  @include respond(tab-port) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.5s ease-in;
+
+    /* Hide */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+
+    @include respond(tab-land) {
+      gap: 3.2rem;
+    }
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      gap: 4.8rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      display: inline-block;
+      color: var(--color-grey-01);
+      font-size: 1.8rem;
+      font-weight: 500;
+      transition: $transition-default;
+      cursor: pointer;
+
+      @include respond(tab-port) {
+        font-size: 3rem;
+      }
+    }
+
+    &:hover,
+    &:active {
+      color: var(--color-primary-shade-04);
+    }
+
+    &.header__cta-btn:link,
+    &.header__cta-btn:visited {
+      padding: 1.2rem 2.4rem;
+      border-radius: 9px;
+      background-color: var(--color-primary);
+      color: var(--color-primary-tint-10);
+    }
+
+    &.header__cta-btn:hover,
+    &.header__cta-btn:active {
+      background-color: var(--color-primary-shade-01);
+    }
+  }
+
+  &__mobile {
+    &-btn {
+      border: none;
+      background: none;
+      cursor: pointer;
+      display: none;
+
+      @include respond(tab-port) {
+        display: block;
+        z-index: $layer-header-nav-mobile-btn;
+      }
+    }
+
+    &-icon {
+      width: 4.8rem;
+      height: 4.8rem;
+      stroke: var(--color-grey-01);
+
+      &[name='close-outline'] {
+        display: none;
+      }
+    }
+  }
+}
+
+.nav-open {
+  .header-nav {
+    @include respond(tab-port) {
+      opacity: 1;
+      pointer-events: auto;
+      visibility: visible;
+      transform: translateX(0);
+    }
+  }
+
+  .header-nav__mobile-icon[name='close-outline'] {
+    @include respond(tab-port) {
+      display: block;
+    }
+  }
+
+  .header-nav__mobile-icon[name='menu-outline'] {
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+}

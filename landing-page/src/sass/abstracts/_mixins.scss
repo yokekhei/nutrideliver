@@ -1,0 +1,52 @@
+// Media Query Manager (1em = 16px)
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == big-desktop {
+    // 1800px/16px = 112.5
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop {
+    // 1440px/16px = 90
+    @media only screen and (max-width: 90em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == small-desktop {
+    // 1350px/16px = 84
+    @media only screen and (max-width: 84em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-land {
+    // 1200px/16px = 75
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 59em) {
+      // 944px/16px = 59
+      @content;
+    }
+  }
+
+  @if $breakpoint == small-tab-port {
+    @media only screen and (max-width: 44em) {
+      // 704px/16px = 44
+      @content;
+    }
+  }
+
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 34em) {
+      // 550px/16px = 34
+      @content;
+    }
+  }
+}

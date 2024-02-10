@@ -1,0 +1,8 @@
+{
+  "host": "smtp.elasticemail.com",
+  "user_name": "",
+  "password": "",
+  "to": "",
+  "from": "",
+  "title_prefix": "NutriDeliver : "
+}

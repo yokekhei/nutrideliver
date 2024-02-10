@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(128, 161, 70, 0.5);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  @include respond(tab-land) {
+    /* 9px / 16px = 0.5625 = 56.25% */
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  line-height: 1;
+  color: $color-body-text;
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+}

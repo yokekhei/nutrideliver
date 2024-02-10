@@ -1,0 +1,101 @@
+.pricing-plan {
+  border-radius: 11px;
+  width: 75%;
+
+  @include respond(tab-port) {
+    width: 80%;
+  }
+
+  @include respond(small-tab-port) {
+    width: 100%;
+  }
+
+  &--starter {
+    padding: 4.6rem;
+    background-color: var(--color-primary-tint-10);
+    border: 2px solid var(--color-primary-tint-08);
+    justify-self: end;
+
+    @include respond(tab-port) {
+      padding: 3rem;
+    }
+
+    @include respond(small-tab-port) {
+      padding: 4.6rem;
+    }
+  }
+
+  &--complete {
+    padding: 4.8rem;
+    background-color: var(--color-primary-tint-08);
+    position: relative;
+    overflow: hidden;
+
+    @include respond(tab-port) {
+      padding: 3.2rem;
+    }
+
+    @include respond(small-tab-port) {
+      padding: 4.8rem;
+    }
+
+    &::after {
+      content: 'Best value';
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--color-grey-01);
+      background-color: #ffd43b;
+      padding: 0.8rem 8rem;
+      position: absolute;
+      top: 6%;
+      right: -18%;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 4.8rem;
+  }
+
+  &__name {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-primary-shade-04);
+    text-transform: uppercase;
+    margin-bottom: 3.2rem;
+    letter-spacing: 0.75px;
+  }
+
+  &__price {
+    font-size: 6.2rem;
+    font-weight: 600;
+    color: var(--color-grey-01);
+    margin-bottom: 1.6rem;
+
+    span {
+      font-size: 3rem;
+      font-weight: 500;
+      margin-right: 0.8rem;
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--color-grey-05);
+  }
+
+  &__subscribe {
+    text-align: center;
+    margin-top: 4.8rem;
+  }
+
+  &__details {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+}

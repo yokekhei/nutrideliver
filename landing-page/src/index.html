@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="The NutriDeliver meal subscription application is your key to rediscovering healthy eating through our year-round, personalized meal plans that are customized to your preferences and nutritional needs."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="module" defer src="js/controller.js"></script>
+    <title>NutriDeliver &mdash; Nourishing You, Delivered</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img class="logo" src="img/logo.png" alt="NutriDeliver company logo" />
+      </a>
+      <nav class="header-nav">
+        <ul class="header-nav__list">
+          <li><a class="header-nav__link" href="#how">How it works</a></li>
+          <li><a class="header-nav__link" href="#meals">Meals</a></li>
+          <li>
+            <a class="header-nav__link" href="#testimonials">Testimonials</a>
+          </li>
+          <li><a class="header-nav__link" href="#pricing">Pricing</a></li>
+          <li>
+            <a class="header-nav__link header__cta-btn" href="#cta"
+              >Start free trial</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button class="header-nav__mobile-btn">
+        <svg class="header-nav__mobile-icon" name="menu-outline">
+          <use xlink:href="img/sprite.svg#menu-outline"></use>
+        </svg>
+        <svg class="header-nav__mobile-icon" name="close-outline">
+          <use xlink:href="img/sprite.svg#close-outline"></use>
+        </svg>
+      </button>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero__container">
+          <div class="hero__text-box">
+            <h1 class="heading-primary">
+              Nutritious meal delivered to your door everyday
+            </h1>
+            <p class="hero__description">
+              Rediscover healthy eating with our year-round, personalized meal
+              subscription tailored to your taste and nutrition.
+            </p>
+            <a class="btn btn--full u-margin-right-sm" href="#cta"
+              >Sign up now</a
+            >
+            <a class="btn btn--outline" href="#how">Learn more &darr;</a>
+            <div class="hero__customers">
+              <div class="hero__customers-imgs">
+                <img src="img/customers/customer-1.jpg" alt="customer photo" />
+                <img src="img/customers/customer-2.jpg" alt="customer photo" />
+                <img src="img/customers/customer-3.jpg" alt="customer photo" />
+                <img src="img/customers/customer-4.jpg" alt="customer photo" />
+                <img src="img/customers/customer-5.jpg" alt="customer photo" />
+                <img src="img/customers/customer-6.jpg" alt="customer photo" />
+              </div>
+              <p class="hero__customers-text">
+                <span>100,000+</span> meals delivered last year!
+              </p>
+            </div>
+          </div>
+          <div class="hero__img-box">
+            <picture>
+              <source srcset="img/hero.webp" type="image/webp" />
+              <source srcset="img/hero-min.png" type="image/png" />
+              <img
+                src="img/hero-min.png"
+                class="hero__img"
+                alt="Chef is preparing meals, meals in storage container, food package on a table, NutriDeliver's delivery man is delivering meals, family enjoying food"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="section-featured-in">
+        <div class="container">
+          <h2 class="featured-in__heading">As Featured In</h2>
+          <div class="featured-in__logos">
+            <img src="img/logos/techcrunch.png" alt="Techcrunch logo" />
+            <img
+              src="img/logos/business-insider.png"
+              alt="Business Insider logo"
+            />
+            <img
+              src="img/logos/the-new-york-times.png"
+              alt="The New York Times logo"
+            />
+            <img src="img/logos/forbes.png" alt="Forbes logo" />
+            <img src="img/logos/usa-today.png" alt="USA Today logo" />
+          </div>
+        </div>
+      </section>
+      <section class="section-how" id="how">
+        <div class="container">
+          <span class="subheading">How it works</span>
+          <h2 class="heading-secondary">
+            Unlocking wellness with just 3 easy steps
+          </h2>
+        </div>
+        <div class="container grid grid--2-cols grid--center-v">
+          <div class="how__text-box">
+            <p class="how__number">01</p>
+            <h3 class="heading-tertiary">Share Your Preferences & Dislikes</h3>
+            <p class="how__description">
+              Eliminate the hassle of meal planning! NutriDeliver tailors a
+              fully personalized weekly meal plan exclusively for you, ensuring
+              optimal nutrition and vitamins, regardless of your dietary
+              choices!
+            </p>
+          </div>
+          <div class="how__img-box">
+            <img
+              class="how__img"
+              src="img/app/app-screen-1.png"
+              alt="iPhone app preferences selection screen"
+            />
+          </div>
+          <div class="how__img-box">
+            <img
+              class="how__img"
+              src="img/app/app-screen-2.png"
+              alt="iPhone app meal approving plan screen"
+            />
+          </div>
+          <div class="how__text-box">
+            <p class="how__number">02</p>
+            <h3 class="heading-tertiary">Review your weekly meal plans</h3>
+            <p class="how__description">
+              Every week, take a look at the meal plan created by NutriDeliver.
+              You have the flexibility to modify ingredients, replace whole
+              meals, or even incorporate your own recipes.
+            </p>
+          </div>
+          <div class="how__text-box">
+            <p class="how__number">03</p>
+            <h3 class="heading-tertiary">Enjoy meals on your schedule</h3>
+            <p class="how__description">
+              Our top local chefs will prepare your chosen meals daily, and
+              we'll deliver them to your doorstep at your preferred time. You
+              have the flexibility to adjust both the delivery timing and
+              address every day!
+            </p>
+          </div>
+          <div class="how__img-box">
+            <img
+              class="how__img"
+              src="img/app/app-screen-3.png"
+              alt="iPhone app delivery screen"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section-meal" id="meals">
+        <div class="container u-center-text">
+          <span class="subheading">Meals</span>
+          <h2 class="heading-secondary">5,000+ recipes available</h2>
+        </div>
+        <div class="container grid grid--3-cols u-margin-bottom-md">
+          <div class="meal">
+            <img
+              class="meal__img"
+              src="img/meals/meal-1.jpg"
+              alt="Nutty Rice"
+            />
+            <div class="meal__content">
+              <div class="meal__tags">
+                <span class="meal__tag meal__tag--vegetarian">Vegetarian</span>
+              </div>
+              <p class="meal__title">Nutty Rice</p>
+              <ul class="meal__attributes">
+                <li class="meal__attribute">
+                  <svg class="meal__icon">
+                    <use xlink:href="img/sprite.svg#flame-outline"></use>
+                  </svg>
+                  <span><strong>580</strong> calories</span>
+                </li>
+                <li class="meal__attribute">
+                  <svg class="meal__icon">
+                    <use xlink:href="img/sprite.svg#restaurant-outline"></use>
+                  </svg>
+                  <span>Health score &reg; <strong>20</strong></span>
+                </li>
+                <li class="meal__attribute">
+                  <svg class="meal__icon">
+                    <use xlink:href="img/sprite.svg#star-outline"></use>
+                  </svg>
+                  <span><strong>4.7</strong> rating (146)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="meal">
+            <img
+              class="meal__img"
+              src="img/meals/meal-2.jpg"
+              alt="Kale Salad"
+            />
+            <div class="meal__content">
+              <div class="meal__tags">
+                <span class="meal__tag meal__tag--vegan">Vegan</span>
+                <span class="meal__tag meal__tag--paleo">Paleo</span>
+              </div>
+              <p class="meal__title">Kale Salad</p>
+              <ul class="meal__attributes">
+                <li class="meal__attribute">
+                  <svg class="meal__icon">
+                    <use xlink:href="img/sprite.svg#flame-outline"></use>
+                  </svg>
+                  <span><strong>300</strong> calories</span>
+                </li>
+                <li class="meal__attribute">
+                  <svg class="meal__icon">
+                    <use xlink:href="img/sprite.svg#restaurant-outline"></use>
+                  </svg>
+                  <span>Health score &reg; <strong>17</strong></span>
+                </li>
+                <li class="meal__attribute">
+                  <svg class="meal__icon">
+                    <use xlink:href="img/sprite.svg#star-outline"></use>
+                  </svg>
+                  <span><strong>4.5</strong> rating (103)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="diets">
+            <h3 class="heading-tertiary">Special dietary needs:</h3>
+            <ul class="list">
+              <li class="list__item">
+                <svg class="list__icon">
+                  <use xlink:href="img/sprite.svg#checkmark-outline"></use>
+                </svg>
+                <span>Gluten-free</span>
+              </li>
+              <li class="list__item">
+                <svg class="list__icon">
+                  <use xlink:href="img/sprite.svg#checkmark-outline"></use>
+                </svg>
+                <span>Ketogenic</span>
+              </li>
+              <li class="list__item">
+                <svg class="list__icon">
+                  <use xlink:href="img/sprite.svg#checkmark-outline"></use>
+                </svg>
+                <span>Vegetarian</span>
+              </li>
+              <li class="list__item">
+                <svg class="list__icon">
+                  <use xlink:href="img/sprite.svg#checkmark-outline"></use>
+                </svg>
+                <span>Lacto-Vegetarian</span>
+              </li>
+              <li class="list__item">
+                <svg class="list__icon">
+                  <use xlink:href="img/sprite.svg#checkmark-outline"></use>
+                </svg>
+                <span>Ovo-Vegetarian</span>
+              </li>
+              <li class="list__item">
+                <svg class="list__icon">
+                  <use xlink:href="img/sprite.svg#checkmark-outline"></use>
+                </svg>
+                <span>Vegan</span>
+              </li>
+              <li class="list__item">
+                <svg class="list__icon">
+                  <use xlink:href="img/sprite.svg#checkmark-outline"></use>
+                </svg>
+                <span>Pescatarian</span>
+              </li>
+              <li class="list__item">
+                <svg class="list__icon">
+                  <use xlink:href="img/sprite.svg#checkmark-outline"></use>
+                </svg>
+                <span>Paleo</span>
+              </li>
+              <li class="list__item">
+                <svg class="list__icon">
+                  <use xlink:href="img/sprite.svg#checkmark-outline"></use>
+                </svg>
+                <span>Primal</span>
+              </li>
+              <li class="list__item">
+                <svg class="list__icon">
+                  <use xlink:href="img/sprite.svg#checkmark-outline"></use>
+                </svg>
+                <span>Low FODMAP</span>
+              </li>
+              <li class="list__item">
+                <svg class="list__icon">
+                  <use xlink:href="img/sprite.svg#checkmark-outline"></use>
+                </svg>
+                <span>Whole30</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container all-recipes">
+          <a href="#" class="text-link text-link--with-padding-bottom">See all recipes &rarr;</a>
+        </div>
+      </section>
+      <section class="section-testimonials" id="testimonials">
+        <div class="testimonials__container">
+          <span class="subheading">Testimonials</span>
+          <h2 class="heading-secondary">
+            You will never have any regrets after trying it
+          </h2>
+          <div class="testimonials">
+            <figure class="testimonial">
+              <img
+                class="testimonial__img"
+                src="img/customers/william.jpg"
+                alt="Photo of customer William Scott"
+              />
+              <blockquote class="testimonial__text">
+                Affordable, nutritious, and delicious meals, all without the
+                need for manual ordering! It's like magic.
+              </blockquote>
+              <p class="testimonial__name">&mdash; William Scott</p>
+            </figure>
+            <figure class="testimonial">
+              <img
+                class="testimonial__img"
+                src="img/customers/emily.jpg"
+                alt="Photo of customer Emily Tan"
+              />
+              <blockquote class="testimonial__text">
+                The app is incredibly effective. It consistently selects the
+                perfect meals for me. It's a relief not to have food-related
+                concerns anymore!
+              </blockquote>
+              <p class="testimonial__name">&mdash; Emily Tan</p>
+            </figure>
+            <figure class="testimonial">
+              <img
+                class="testimonial__img"
+                src="img/customers/gilbert.jpg"
+                alt="Photo of customer Gilbert Dave"
+              />
+              <blockquote class="testimonial__text">
+                NutriDeliver has been a game-changer! With my new business,
+                cooking is out of the question. I can't imagine life without my
+                daily meals from them now!
+              </blockquote>
+              <p class="testimonial__name">&mdash; Gilbert Dave</p>
+            </figure>
+            <figure class="testimonial">
+              <img
+                class="testimonial__img"
+                src="img/customers/sophia.jpg"
+                alt="Photo of customer Sophia Miller"
+              />
+              <blockquote class="testimonial__text">
+                I subscribed to NutriDeliver for the entire family, and it's
+                been a time-saver! Plus, the fact that everything is organic,
+                vegan, and plastic-free is a bonus.
+              </blockquote>
+              <p class="testimonial__name">&mdash; Sophia Miller</p>
+            </figure>
+          </div>
+        </div>
+        <div class="gallery">
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-1.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-2.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-3.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-4.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-5.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-6.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-7.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-8.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-9.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-10.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-11.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-12.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+        </div>
+      </section>
+      <section class="section-pricing" id="pricing">
+        <div class="container">
+          <span class="subheading">Pricing</span>
+          <h2 class="heading-secondary">Healthy eating on a budget</h2>
+        </div>
+        <div class="container grid grid--2-cols u-margin-bottom-md">
+          <div class="pricing-plan pricing-plan--starter">
+            <header class="pricing-plan__header">
+              <p class="pricing-plan__name">Starter</p>
+              <p class="pricing-plan__price"><span>$</span>299</p>
+              <p class="pricing-plan__text">
+                per month. That's just $10 per meal!
+              </p>
+            </header>
+            <ul class="list">
+              <li class="list__item">
+                <svg class="list__icon">
+                  <use xlink:href="img/sprite.svg#checkmark-outline"></use>
+                </svg>
+                <span>1 meal per day</span>
+              </li>
+              <li class="list__item">
+                <svg class="list__icon">
+                  <use xlink:href="img/sprite.svg#checkmark-outline"></use>
+                </svg>
+                <span>Order from 10am and 8pm</span>
+              </li>
+              <li class="list__item">
+                <svg class="list__icon">
+                  <use xlink:href="img/sprite.svg#checkmark-outline"></use>
+                </svg>
+                <span>Delivery is free</span>
+              </li>
+              <li class="list__item">
+                <svg class="list__icon">
+                  <use xlink:href="img/sprite.svg#close-outline"></use>
+                </svg>
+              </li>
+            </ul>
+            <div class="pricing-plan__subscribe">
+              <a href="#" class="btn btn--full">Subscribe</a>
+            </div>
+          </div>
+          <div class="pricing-plan pricing-plan--complete">
+            <header class="pricing-plan__header">
+              <p class="pricing-plan__name">Complete</p>
+              <p class="pricing-plan__price"><span>$</span>549</p>
+              <p class="pricing-plan__text">
+                per month. That's just $9 per meal!
+              </p>
+            </header>
+            <ul class="list">
+              <li class="list__item">
+                <svg class="list__icon">
+                  <use xlink:href="img/sprite.svg#checkmark-outline"></use>
+                </svg>
+                <span><strong>2 meals</strong> per day</span>
+              </li>
+              <li class="list__item">
+                <svg class="list__icon">
+                  <use xlink:href="img/sprite.svg#checkmark-outline"></use>
+                </svg>
+                <span>Order <strong>24/7</strong></span>
+              </li>
+              <li class="list__item">
+                <svg class="list__icon">
+                  <use xlink:href="img/sprite.svg#checkmark-outline"></use>
+                </svg>
+                <span>Delivery is free</span>
+              </li>
+              <li class="list__item">
+                <svg class="list__icon">
+                  <use xlink:href="img/sprite.svg#checkmark-outline"></use>
+                </svg>
+                <span>Unlock the newest recipes</span>
+              </li>
+            </ul>
+            <div class="pricing-plan__subscribe">
+              <a href="#" class="btn btn--full">Subscribe</a>
+            </div>
+          </div>
+        </div>
+        <div class="container grid">
+          <aside class="pricing-plan__details">
+            Prices include all applicable taxes. You can cancel at any time.
+            Both plans include the following:
+          </aside>
+        </div>
+        <div class="container grid grid--4-cols">
+          <div class="feature">
+            <div class="feature__icon-frame">
+              <svg class="feature__icon">
+                <use xlink:href="img/sprite.svg#hand-right-outline"></use>
+              </svg>
+            </div>
+            <p class="feature__title">Goodbye cooking!</p>
+            <p class="feature__text">
+              Our subscription plans encompass all 365 days of the year,
+              including major holidays.
+            </p>
+          </div>
+          <div class="feature">
+            <div class="feature__icon-frame">
+              <svg class="feature__icon">
+                <use xlink:href="img/sprite.svg#nutrition-outline"></use>
+              </svg>
+            </div>
+            <p class="feature__title">Local and organic</p>
+            <p class="feature__text">
+              Our culinary experts utilize fresh, local, and organic ingredients
+              in meal preparation.
+            </p>
+          </div>
+          <div class="feature">
+            <div class="feature__icon-frame">
+              <svg class="feature__icon">
+                <use xlink:href="img/sprite.svg#leaf-outline"></use>
+              </svg>
+            </div>
+            <p class="feature__title">No waste</p>
+            <p class="feature__text">
+              Our partners employ reusable containers for meal packaging,
+              reducing waste.
+            </p>
+          </div>
+          <div class="feature">
+            <div class="feature__icon-frame">
+              <svg class="feature__icon">
+                <use xlink:href="img/sprite.svg#pause-outline"></use>
+              </svg>
+            </div>
+            <p class="feature__title">Flexibility</p>
+            <p class="feature__text">
+              Planning a vacation? Simply pause your subscription, and we will
+              refund any unused days.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta__text-box">
+              <h2 class="heading-secondary">Get your first meal for free!</h2>
+              <p class="cta__text">
+                Nutritious, and convenient meals are waiting for you. Get your
+                first meal today and you have the freedom to cancel or pause at
+                any time.
+              </p>
+              <form class="cta__form" name="sign_up">
+                <div class="form-item">
+                  <label for="full_name">Full Name</label>
+                  <input
+                    type="text"
+                    id="full_name"
+                    name="full_name"
+                    placeholder="John Smith"
+                    required
+                  />
+                </div>
+                <div class="form-item">
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="me@example.com"
+                    required
+                  />
+                </div>
+                <div class="form-item">
+                  <label for="select_where">Where did you hear from us?</label>
+                  <select name="select_where" id="select_where" required>
+                    <option value="">Please choose one option:</option>
+                    <option value="friends">Friends and family</option>
+                    <option value="youtube">YouTube video</option>
+                    <option value="podcast">Podcast</option>
+                    <option value="ad">Facebook ad</option>
+                    <option value="others">Others</option>
+                  </select>
+                </div>
+                <button class="btn btn--form">Sign up</button>
+              </form>
+            </div>
+            <div
+              class="cta__img-box"
+              role="img"
+              aria-label="Man enjoying food"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="footer__col-logo">
+          <a href="#" class="footer__logo">
+            <img
+              class="logo"
+              src="img/logo.png"
+              alt="NutriDeliver company logo"
+            />
+          </a>
+          <ul class="social-media">
+            <li>
+              <a href="#" class="footer__link">
+                <svg class="social-media__icon">
+                  <use xlink:href="img/sprite.svg#logo-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">
+                <svg class="social-media__icon">
+                  <use xlink:href="img/sprite.svg#logo-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">
+                <svg class="social-media__icon">
+                  <use xlink:href="img/sprite.svg#logo-x"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="footer__copyright">
+            Copyright &copy; <span class="year">2023</span> by NutriDeliver,
+            Inc. All rights reserved.
+          </p>
+        </div>
+        <div class="footer__col-address">
+          <p class="footer__heading">Contact us</p>
+          <address class="footer__contact">
+            <p class="footer__address">151 S. Harbor Blvd, Anaheim, CA 92802</p>
+            <p>
+              <a class="footer__link" href="tel:714-772-4652">714-772-4652</a>
+              <br />
+              <a class="footer__link" href="mailto:hello@nutrideliver.com"
+                >hello@nutrideliver.com</a
+              >
+            </p>
+          </address>
+        </div>
+        <div class="footer__col-nav">
+          <p class="footer__heading">Account</p>
+          <ul class="footer__nav">
+            <li><a class="footer__link" href="#">Create account</a></li>
+            <li><a class="footer__link" href="#">Sign in</a></li>
+            <li><a class="footer__link" href="#">iOS app</a></li>
+            <li><a class="footer__link" href="#">Android app</a></li>
+          </ul>
+        </div>
+        <div class="footer__col-nav">
+          <p class="footer__heading">Company</p>
+          <ul class="footer__nav">
+            <li><a class="footer__link" href="#">About NutriDeliver</a></li>
+            <li><a class="footer__link" href="#">For Business</a></li>
+            <li><a class="footer__link" href="#">Cooking partners</a></li>
+            <li><a class="footer__link" href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer__col-nav">
+          <p class="footer__heading">Resources</p>
+          <ul class="footer__nav">
+            <li><a class="footer__link" href="#">Recipe directory</a></li>
+            <li><a class="footer__link" href="#">Help center</a></li>
+            <li><a class="footer__link" href="#">Privacy & terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="disclaimer disclaimer__open">
+      <div class="container grid grid--disclaimer">
+        <p class="disclaimer__header">
+          Disclaimer: This Webpage Is for Demonstration and Educational Purposes
+        </p>
+        <button class="disclaimer__btn">
+          <svg
+            class="disclaimer__icon disclaimer__icon--down"
+            name="caret-down-outline"
+          >
+            <use xlink:href="img/sprite.svg#caret-down-outline"></use>
+          </svg>
+          <svg
+            class="disclaimer__icon disclaimer__icon--up"
+            name="caret-up-outline"
+          >
+            <use xlink:href="img/sprite.svg#caret-up-outline"></use>
+          </svg>
+        </button>
+        <div class="disclaimer__content">
+          <p class="disclaimer__text">
+            The "$company-Inspired Web Redesign" webpage showcased here is a
+            project designed and developed by $developer for educational and
+            portfolio demonstration purposes only. It is not affiliated with
+            $domain, nor is it intended to impersonate or represent $company's
+            official website in any manner.
+          </p>
+          <p class="disclaimer__text strong">Key Points:</p>
+          <ol class="disclaimer__items">
+            <li class="disclaimer__text">
+              <span class="strong">Educational Showcase:</span> This webpage is
+              part of $developer's web developer portfolio and serves as an
+              educational tool to demonstrate web development and design skills.
+            </li>
+            <li class="disclaimer__text">
+              <span class="strong">Inspired by $company:</span> The design of
+              this webpage is inspired by $domain to showcase proficiency in web
+              design and development, including HTML, CSS, and JavaScript.
+            </li>
+            <li class="disclaimer__text">
+              <span class="strong">No Official Affiliation:</span> This project
+              has no official affiliation or endorsement from $domain.
+            </li>
+            <li class="disclaimer__text">
+              <span class="strong">Not for Commercial Use:</span> This webpage
+              is not intended for commercial use, and it does not facilitate
+              actual commercial transactions.
+            </li>
+          </ol>
+          <p class="disclaimer__text strong">
+            Respect for Copyright and Branding:
+          </p>
+          <p class="disclaimer__text">
+            $developer respects $company's intellectual property rights and
+            branding guidelines. The use of $company's design elements is solely
+            for the purpose of educational demonstration, and no attempt is made
+            to infringe upon any rights held by $domain.
+          </p>
+          <p class="disclaimer__text strong">Please Note:</p>
+          <p class="disclaimer__text">
+            While every effort has been made to accurately mimic the appearance
+            of $company's website, this project is a design exercise and should
+            not be mistaken for or used as the actual $domain website.
+          </p>
+          <p class="disclaimer__text">
+            If you have any questions or concerns regarding this project, please
+            feel free to contact
+            <a href="$contactUrl" class="text-link disclaimer__link">$developer</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="modal u-hidden">
+      <svg class="modal__icon--status" name="happy-outline">
+        <use xlink:href="img/sprite.svg#happy-outline"></use>
+      </svg>
+      <h4 class="heading-tertiary modal__title">Sign up request submitted</h4>
+      <button class="modal__close-btn">
+        <svg class="modal__icon--close" name="close-outline">
+          <use xlink:href="img/sprite.svg#close-outline"></use>
+        </svg>
+      </button>
+      <div class="modal__text">
+        Thank you for signing up! Check your email for a confirmation message.
+        If you don't see it, please check your spam folder. Exciting things
+        await &mdash; stay tuned!
+      </div>
+    </div>
+    <div class="overlay u-hidden"></div>
+  </body>
+</html>
